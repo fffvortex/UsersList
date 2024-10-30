@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="App">
       {success ? (
-        <Success count={invites.length}/>
+        <Success allInvites={users.length} count={invites.length}/>
       ) : (
         <Users
           onClickInvite={onClickInvite}
